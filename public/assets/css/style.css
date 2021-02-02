@@ -1,7 +1,7 @@
 li {
   padding: 5px;
   margin: 5px;
-  background: #faebd7;
+  background: #ffffff8e;
 }
 
 .label {
@@ -16,4 +16,13 @@ li {
 
 .form-group {
   margin-bottom: 5px;
+}
+
+#jumbo {
+  font-family: 'Orbitron', sans-serif;
+}
+
+h2 {
+  font-family: 'Orbitron', sans-serif;
+  color: #ffffffca;
 }

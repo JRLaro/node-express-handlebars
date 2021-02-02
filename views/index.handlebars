@@ -1,38 +1,81 @@
-<h1>Burgers!</h1>
+<div id="jumbo" class="jumbotron jumbotron-fluid bg-warning">
+  <div class="container">
+    <h1 class="display-4 text-center">Build-a-Burger</h1>
+    <p class="lead">Need help keeping track of burgers that you have already eaten or would like to eat, then give this a try... sorry we forgot the fries .</p>
+  </div>
+</div>
 
-<h2>Burgers that have not been devoured!</h2>
 
-<ul>
+<div class="card bg-success">
+  <div class="card-header text-center">
+    <h2>Burgers that have not been devoured!</h2>
+  </div>
+  <div class="card-body">
+    <blockquote class="blockquote mb-0">
+      <ul>
   {{#each burgers}}
     {{#unless devoured}}
       {{> burgers/burger-block devoured=true}}
     {{/unless}}
   {{/each}}
 </ul>
+    </blockquote>
+  </div>
+</div>
 
-<h2>Burgers that have been DEVOURED!</h2>
+<br>
 
-<ul>
+
+<div class="card bg-danger">
+  <div class="card-header text-center">
+    <h2>Burgers that have been DEVOURED!</h2>
+  </div>
+  <div class="card-body">
+    <blockquote class="blockquote mb-0">
+      <ul>
   {{#each burgers}}
     {{#if devoured}}
       {{> burgers/burger-block devoured=false}}
     {{/if}}
   {{/each}}
 </ul>
+    </blockquote>
+  </div>
+</div>
 
+<br>
+
+<div class="card bg-success">
+  <div class="card-header text-center">
 <h2>Add a Burger</h2>
-<form class="create-form">
+  </div>
+  <div class="card-body">
+    <blockquote class="blockquote mb-0">
+      <form class="create-form">
 
   <div class="form-group">
     <label for="bu">Burger Name:</label>
     <input type="text" id="bu" name="name">
   </div>
+    </blockquote>
+  </div>
+</div>
 
-  <div class="form-group">
-    <label for="devoured">Devour?</label><br>
+<br>
+
+<div class="card bg-warning">
+  <div class="card-header text-center">
+<label for="devoured">What would you like to do?</label
+  </div>
+  <div class="card-body">
+    <blockquote class="blockquote mb-0">
+     <div class="form-group">
     <input type="radio" name="devoured" value="1" checked> Devour!<br>
     <input type="radio" name="devoured" value="0"> Devoured
   </div>
 
   <button type="submit">Add Burger</button>
 </form>
+    </blockquote>
+  </div>
+</div>
