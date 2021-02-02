@@ -12,7 +12,7 @@ li {
 .create-update-form {
   padding: 5px;
   margin: 5px;
-  background: aqua;
+  background: rgb(170, 170, 170);
 }
 
 .form-group {
